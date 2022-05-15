@@ -15,9 +15,38 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDi-Ep-7X9">
+                                <rect key="frame" x="20" y="811" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="sendButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9gE-s6-aex"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3BC-P5-6QB">
+                                <rect key="frame" x="20" y="64" width="374" height="739"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3BC-P5-6QB" secondAttribute="trailing" constant="20" id="4U9-a7-dKz"/>
+                            <constraint firstItem="3BC-P5-6QB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ROZ-83-c2d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XDi-Ep-7X9" secondAttribute="trailing" constant="20" id="SHj-Hp-I7s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XDi-Ep-7X9" secondAttribute="bottom" constant="20" id="Vvi-fC-PIu"/>
+                            <constraint firstItem="XDi-Ep-7X9" firstAttribute="top" secondItem="3BC-P5-6QB" secondAttribute="bottom" constant="8" symbolic="YES" id="ZyM-oD-tZ1"/>
+                            <constraint firstItem="3BC-P5-6QB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dIr-ha-K70"/>
+                            <constraint firstItem="XDi-Ep-7X9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pJW-IM-Y8X"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="3BC-P5-6QB" id="Y5n-Mj-kx6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -25,6 +54,12 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
