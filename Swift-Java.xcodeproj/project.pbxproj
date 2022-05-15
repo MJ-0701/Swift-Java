@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86144C41B203FFBB4813FCB0 /* Pods_Swift_Java.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55332471E3A5A680A74E1FA9 /* Pods_Swift_Java.framework */; };
 		F132867B28312DB7009314E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F132867A28312DB7009314E5 /* AppDelegate.swift */; };
 		F132867D28312DB7009314E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F132867C28312DB7009314E5 /* SceneDelegate.swift */; };
 		F132867F28312DB7009314E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F132867E28312DB7009314E5 /* ViewController.swift */; };
 		F132868228312DB7009314E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F132868028312DB7009314E5 /* Main.storyboard */; };
 		F132868428312DB8009314E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F132868328312DB8009314E5 /* Assets.xcassets */; };
 		F132868728312DB8009314E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F132868528312DB8009314E5 /* LaunchScreen.storyboard */; };
+		F132868F28313619009314E5 /* Swift-Java.xcworkspace in Frameworks */ = {isa = PBXBuildFile; fileRef = F132868E28313619009314E5 /* Swift-Java.xcworkspace */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0964AFF787C2A3DFBB8C37F3 /* Pods-Swift-Java.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Java.release.xcconfig"; path = "Target Support Files/Pods-Swift-Java/Pods-Swift-Java.release.xcconfig"; sourceTree = "<group>"; };
+		55332471E3A5A680A74E1FA9 /* Pods_Swift_Java.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Java.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B86A8539CD7896F85BD528BC /* Pods-Swift-Java.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Java.debug.xcconfig"; path = "Target Support Files/Pods-Swift-Java/Pods-Swift-Java.debug.xcconfig"; sourceTree = "<group>"; };
 		F132867728312DB7009314E5 /* Swift-Java.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Java.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F132867A28312DB7009314E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F132867C28312DB7009314E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		F132868328312DB8009314E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F132868628312DB8009314E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F132868828312DB8009314E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F132868E28313619009314E5 /* Swift-Java.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = "Swift-Java.xcworkspace"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F132868F28313619009314E5 /* Swift-Java.xcworkspace in Frameworks */,
+				86144C41B203FFBB4813FCB0 /* Pods_Swift_Java.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B09173C8BCA41A5CEBB2165 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F132868E28313619009314E5 /* Swift-Java.xcworkspace */,
+				55332471E3A5A680A74E1FA9 /* Pods_Swift_Java.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6B45B72ED16DD1591C030BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B86A8539CD7896F85BD528BC /* Pods-Swift-Java.debug.xcconfig */,
+				0964AFF787C2A3DFBB8C37F3 /* Pods-Swift-Java.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F132866E28312DB7009314E5 = {
 			isa = PBXGroup;
 			children = (
 				F132867928312DB7009314E5 /* Swift-Java */,
 				F132867828312DB7009314E5 /* Products */,
+				C6B45B72ED16DD1591C030BA /* Pods */,
+				8B09173C8BCA41A5CEBB2165 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F132868B28312DB8009314E5 /* Build configuration list for PBXNativeTarget "Swift-Java" */;
 			buildPhases = (
+				196900E468F11B8C07691027 /* [CP] Check Pods Manifest.lock */,
 				F132867328312DB7009314E5 /* Sources */,
 				F132867428312DB7009314E5 /* Frameworks */,
 				F132867528312DB7009314E5 /* Resources */,
+				DAFF097E3A4A4BCB7FA803AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		196900E468F11B8C07691027 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swift-Java-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAFF097E3A4A4BCB7FA803AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swift-Java/Pods-Swift-Java-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swift-Java/Pods-Swift-Java-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swift-Java/Pods-Swift-Java-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F132867328312DB7009314E5 /* Sources */ = {
@@ -282,7 +354,9 @@
 		};
 		F132868C28312DB8009314E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B86A8539CD7896F85BD528BC /* Pods-Swift-Java.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,11 +369,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				PODS_BUILD_DIR = "$(PODS_BUILD_DIR)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Swift-Java";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -310,7 +386,9 @@
 		};
 		F132868D28312DB8009314E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0964AFF787C2A3DFBB8C37F3 /* Pods-Swift-Java.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,11 +401,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				PODS_BUILD_DIR = "$(PODS_BUILD_DIR)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Swift-Java";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
